@@ -24,11 +24,7 @@ class FiguresController < ApplicationController
   end
 
   post '/figures' do
-    @figure = Figure.create(name: params[:figure][:name])
-
-    @figure.titles = params[:figure][:title_ids].map{|title| Title.find_by(name: title)} if params[:figure][:title_ids]
-    @figure.landmarks = params[:figure][:landmark_ids].map{|landmark| Landmark.find_by(name: landmark)} if
-    params[:figure][:landmark_ids]
+    @figure = Figure.create(params[:figure])
 
     @figure.titles << Title.create(name: params[:title][:name]) if !params[:title][:name].empty?
     @figure.landmarks << Landmark.create(name: params[:landmark][:name]) if !params[:landmark][:name].empty?
@@ -40,11 +36,7 @@ class FiguresController < ApplicationController
 
   patch '/figures/:id' do
     @figure = Figure.find_by_id(params[:id])
-    @figure.name = params[:figure][:name]
-
-    @figure.titles = params[:figure][:title_ids].map{|title| Title.find_by(name: title)} if params[:figure][:title_ids]
-    @figure.landmarks = params[:figure][:landmark_ids].map{|landmark| Landmark.find_by(name: landmark)} if
-    params[:figure][:landmark_ids]
+    @figure = Figure.update(params[:figure])
 
     @figure.titles << Title.create(name: params[:title][:name]) if !params[:title][:name].empty?
     @figure.landmarks << Landmark.create(name: params[:landmark][:name]) if !params[:landmark][:name].empty?
