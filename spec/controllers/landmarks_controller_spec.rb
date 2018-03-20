@@ -84,6 +84,6 @@ describe LandmarksController do
       visit "/figures/new"
       expect(page).to have_css("input[type=\"checkbox\"]")
       expect(page).to have_content('Mayor')
-      
+      binding.pry
   end
 end
