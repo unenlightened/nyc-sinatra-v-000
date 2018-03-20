@@ -3,7 +3,7 @@
 <form  action="/landmarks" method="post">
   <input type="hidden" name="_method" value="patch">
   <label>Name: </label><br><br>
-  <input type="text" name="na" id="name" value="<%= @landmark.name %>">
+  <input type="text" name="landmark[name]" id="name" value="<%= @landmark.name %>">
   <br><br>
 
   <label>Year Completed: </label><br><br>
