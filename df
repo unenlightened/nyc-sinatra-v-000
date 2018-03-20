@@ -1,0 +1,50 @@
+=> [[32m#<Landmark:0x00000002e637d0[0m
+  id: [1;34m1[0m,
+  name: [31m[1;31m"[0m[31mplane[1;31m"[0m[31m[0m,
+  figure_id: [1;34m1[0m,
+  year_completed: [1;34m2015[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e635c8[0m
+  id: [1;34m2[0m,
+  name: [31m[1;31m"[0m[31mMadison Square Guarden[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m1901[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e632f8[0m
+  id: [1;34m3[0m,
+  name: [31m[1;31m"[0m[31mThe big bull outside[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m1995[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e63050[0m
+  id: [1;34m4[0m,
+  name: [31m[1;31m"[0m[31mFlatiron School[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m2014[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e62d30[0m
+  id: [1;34m5[0m,
+  name: [31m[1;31m"[0m[31mMuseum Mile[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m1058[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e62718[0m
+  id: [1;34m6[0m,
+  name: [31m[1;31m"[0m[31mSubway Station[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m2015[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e62560[0m
+  id: [1;34m7[0m,
+  name: [31m[1;31m"[0m[31mCast Iron[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m1951[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e62380[0m
+  id: [1;34m8[0m,
+  name: [31m[1;31m"[0m[31mShea Stadium[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m1964[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e620d8[0m
+  id: [1;34m9[0m,
+  name: [31m[1;31m"[0m[31mFlatiron Building[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m1902[0m[32m>[0m,
+ [32m#<Landmark:0x00000002e61ae8[0m
+  id: [1;34m10[0m,
+  name: [31m[1;31m"[0m[31mBrooklyn Bridge[1;31m"[0m[31m[0m,
+  figure_id: [1;36mnil[0m,
+  year_completed: [1;34m1883[0m[32m>[0m]
