@@ -15,24 +15,12 @@ class LandmarksController < ApplicationController
 
   get '/landmarks/:id/edit' do
     @landmark = Landmark.find_by_id(params[:id])
-    @titles = Title.all
-    @landmarks = Landmark.all
 
     erb :'landmarks/edit'
   end
 
   post '/landmarks' do
-    @landmark = Landmark.create(name: params[:landmark][:name])
-
-    @landmark.titles = params[:landmark][:title_ids].map{|title| Title.find_by(name: title)} if params[:landmark][:title_ids]
-    @landmark.landmarks = params[:landmark][:landmark_ids].map{|landmark| Landmark.find_by(name: landmark)} if
-    params[:landmark][:landmark_ids]
-
-    @landmark.titles << Title.create(name: params[:title][:name]) if !params[:title][:name].empty?
-    @landmark.landmarks << Landmark.create(name: params[:landmark][:name]) if !params[:landmark][:name].empty?
-
-    @landmark.save
-
+    @landmark = Landmark.create(params[:landmark])
     redirect "/landmarks/#{@landmark.id}"
   end
 
