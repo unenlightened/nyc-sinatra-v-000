@@ -3,7 +3,7 @@
 <h3>Landmarks: </h3>
 <ul>
   <% @figure.landmarks.each do |landmark| %>
-  <li><a href="/figures/<%= landmark.id %>"><%= landmark.name %></a></li>
+  <li><a href="/landmarks/<%= landmark.id %>"><%= landmark.name %></a></li>
   <% end %>
 </ul>
 
